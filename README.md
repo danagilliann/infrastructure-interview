@@ -31,3 +31,5 @@ npm start
 ```
 
 And it will be running on port 3000. You should be able to navigate to it [here](http://localhost:3000/).
+
+We have included some things for you already! The entire angular app is inside the `app` folder.
