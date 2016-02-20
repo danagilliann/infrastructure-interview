@@ -11,6 +11,8 @@ Through this challenge you will be making a web application! This will test your
 
 If you're familiar with REST APIs and have worked with frontend before -- this problem should not take you more than a couple hours. The idea behind the problem is that we want you to get data from our API, make sense of it, and make a simple visualization using the library of your choice.
 
+The deadline is 26th February 2016 at 9:00 PM. The instructions on how to submit are at the bottom.
+
 ## Getting Started
 
 Clone this repository:
@@ -193,5 +195,7 @@ $.get("https://api.tnyu.org/v3/events?include=venue", function(data) {
 What we're doing here is that we have events data and venue data. Then we're using a hash map to map a venue ID key to a venue.
 
 Okay great! So you have all the items now. What we want you to do is to create a graph (of your choosing using a library of your choosing as well) that shows how many times each venue has been used. You can be creative about how to show this data. Extra points for some cool data science stuff.
+
+## Submit
 
 To submit either create a repository on Github with this code (extra points) and email it to us at ycp217 at nyu.edu OR zip up the app folder as `<lastname>_<firstname>.zip`, and email it to ycp217 at nyu.edu.
