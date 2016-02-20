@@ -11,6 +11,8 @@ Through this challenge you will be making a web application! This will test your
 
 If you're familiar with REST APIs and have worked with frontend before -- this problem should not take you more than a couple hours. The idea behind the problem is that we want you to get data from our API, make sense of it, and make a simple visualization using the library of your choice.
 
+If you run into issues with the challenge please feel free to create an issue through the [Github interface](https://github.com/TechAtNYU/infrastructure-interview/issues) (preferred) OR if important email ycp217 at nyu.edu.
+
 The deadline is 26th February 2016 at 9:00 PM. The instructions on how to submit are at the bottom.
 
 ## Getting Started
