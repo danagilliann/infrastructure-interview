@@ -2,7 +2,7 @@
 
 Hello! This is the Tech@NYU Infrastructure team challenge.
 
-Through this challenge you will be making an AngularJS application! This will test your ability to write code! We will be testing your ability:
+Through this challenge you will be making a web application! This will test your ability to write code! We will be testing your ability:
 
 - to build front-end applications
 - to build modularized code
