@@ -15,7 +15,7 @@ The deadline is 26th February 2016 at 9:00 PM. The instructions on how to submit
 
 ## Getting Started
 
-Clone this repository:
+Clone this repository (please don't fork it!):
 
 ```
 git clone git@github.com:TechAtNYU/infrastructure-interview.git
@@ -198,4 +198,6 @@ Okay great! So you have all the items now. What we want you to do is to create a
 
 ## Submit
 
-To submit either create a repository on Github with this code (extra points) and email it to us at ycp217 at nyu.edu OR zip up the app folder as `<lastname>_<firstname>.zip`, and email it to ycp217 at nyu.edu.
+To submit either create a **private** repository on Github with this code (extra points) and email it to us at ycp217 at nyu.edu OR zip up the app folder as `<lastname>_<firstname>.zip`, and email it to ycp217 at nyu.edu.
+
+If the repository is private on Github please add `ycp217` as a collaborator.
