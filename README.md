@@ -55,114 +55,141 @@ A single event will look something like:
 
 ```json
 {
+    "id": "56c696e49a0f0429c502f14d",
+    "type": "events",
+    "attributes": {
+        "title": "Tech@NYU After Hours #4 (Spring '16)",
+        "level": "Beginner",
+        "shortTitle": "After Hours #4",
+        "description": "It's time to meet, mix and make.",
+        "details": "It's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!",
+        "status": "announced",
+        "endDateTime": "2016-03-03T01:00:00.000Z",
+        "startDateTime": "2016-03-02T23:00:00.000Z",
+        "modified": "2016-02-19T04:17:31.055Z",
+        "created": "2016-02-19T04:15:31.519Z",
+        "isInternal": false,
+        "alternateRsvpUrls": ["http://rsvp.techatnyu.org/"],
+        "aims": ["Learn New Skills"],
+        "categories": ["socializing"],
+        "bodyPlain": "It's time to meet, mix and make.\n\nIt's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!\n\nAll Tech@NYU events are covered by a strict anti-harassment policy: http://techatnyu.org/anti-harassment",
+        "body": "<p>It's time to meet, mix and make.</p>It's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!<p>All Tech@NYU events are covered by a strict <a href=\"http://techatnyu.org/anti-harassment\">anti-harassment policy</a>.</p>"
+    },
     "links": {
         "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d"
     },
-    "data": {
-        "id": "56c696e49a0f0429c502f14d",
-        "type": "events",
-        "attributes": {
-            "title": "Tech@NYU After Hours #4 (Spring '16)",
-            "level": "Beginner",
-            "shortTitle": "After Hours #4",
-            "description": "It's time to meet, mix and make.",
-            "details": "It's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!",
-            "status": "announced",
-            "endDateTime": "2016-03-03T01:00:00.000Z",
-            "startDateTime": "2016-03-02T23:00:00.000Z",
-            "modified": "2016-02-19T04:17:31.055Z",
-            "created": "2016-02-19T04:15:31.519Z",
-            "isInternal": false,
-            "alternateRsvpUrls": ["http://rsvp.techatnyu.org/"],
-            "aims": ["Learn New Skills"],
-            "categories": ["socializing"],
-            "bodyPlain": "It's time to meet, mix and make.\n\nIt's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!\n\nAll Tech@NYU events are covered by a strict anti-harassment policy: http://techatnyu.org/anti-harassment",
-            "body": "<p>It's time to meet, mix and make.</p>It's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!<p>All Tech@NYU events are covered by a strict <a href=\"http://techatnyu.org/anti-harassment\">anti-harassment policy</a>.</p>"
+    "relationships": {
+        "venue": {
+            "data": {
+                "type": "venues",
+                "id": "5538889821b6808dd493bede"
+            },
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/venue",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/venue"
+            }
         },
-        "links": {
-            "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d"
+        "teams": {
+            "data": [{
+                "type": "teams",
+                "id": "53f54dd98d1e62ff12539dc2"
+            }],
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/teams",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/teams"
+            }
         },
-        "relationships": {
-            "venue": {
-                "data": {
-                    "type": "venues",
-                    "id": "5538889821b6808dd493bede"
-                },
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/venue",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/venue"
-                }
+        "coorganizers": {
+            "data": [],
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/coorganizers",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/coorganizers"
+            }
+        },
+        "presenters": {
+            "data": [],
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/presenters",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/presenters"
+            }
+        },
+        "attendees": {
+            "data": [],
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/attendees",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/attendees"
+            }
+        },
+        "rsvps": {
+            "data": [],
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/rsvps",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/rsvps"
+            }
+        },
+        "teaches": {
+            "data": [],
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/teaches",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/teaches"
+            }
+        },
+        "addedBy": {
+            "data": {
+                "type": "people",
+                "id": "5632592fd28b5c1c59dba8b9"
             },
-            "teams": {
-                "data": [{
-                    "type": "teams",
-                    "id": "53f54dd98d1e62ff12539dc2"
-                }],
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/teams",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/teams"
-                }
-            },
-            "coorganizers": {
-                "data": [],
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/coorganizers",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/coorganizers"
-                }
-            },
-            "presenters": {
-                "data": [],
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/presenters",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/presenters"
-                }
-            },
-            "attendees": {
-                "data": [],
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/attendees",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/attendees"
-                }
-            },
-            "rsvps": {
-                "data": [],
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/rsvps",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/rsvps"
-                }
-            },
-            "teaches": {
-                "data": [],
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/teaches",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/teaches"
-                }
-            },
-            "addedBy": {
-                "data": {
-                    "type": "people",
-                    "id": "5632592fd28b5c1c59dba8b9"
-                },
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/addedBy",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/addedBy"
-                }
-            },
-            "survey": {
-                "data": null,
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/survey",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/survey"
-                }
-            },
-            "feedback": {
-                "data": [],
-                "links": {
-                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/feedback",
-                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/feedback"
-                }
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/addedBy",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/addedBy"
+            }
+        },
+        "survey": {
+            "data": null,
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/survey",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/survey"
+            }
+        },
+        "feedback": {
+            "data": [],
+            "links": {
+                "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/feedback",
+                "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/feedback"
             }
         }
     }
 }
 ```
+
+To access a particular property would would have to do:
+
+```js
+$.get("https://api.tnyu.org/v3/events", function(data) {
+    var events = data.data;
+    var singleEvent = events[0];
+    console.log(singleEvent.attributes.title);
+});
+```
+
+If you look at `/js/app.js` you're going to see that we used extra parameters `?include=venue`. Those basically include venue data as well. So there will be two keys inside the `data` object: `data` and `included`. Data is the core data for each event, and `included` is other resources that have been included. In this case we have included the `venues` resource. You should be able to get a single venue by going [here](https://api.tnyu.org/v3/venues/5538889821b6808dd493bede). Most events are associated with a particular venue. To get the venue ID of an event you can do:
+
+```js
+$.get("https://api.tnyu.org/v3/events?include=venue", function(data) {
+    var events = data.data;
+    var venues = data.included;
+
+    var venueIdToVenue = {};
+    venues.forEach(function(venue) {
+        venueIdToVenue[venue['id']] = venue;
+    });
+
+    var singleEvent = events[0];
+    console.log(singleEvent.relationships.venue.data.id);
+    console.log(venueIdToVenue[singleEvent.relationships.venue.data.id]);
+});
+```
+
+What we're doing here is that we have events data and venue data. Then we're using a hash map to map a venue ID key to a venue.
+
+Okay great! So you have all the items now. What we want you to do is to create a graph (of your choosing using a library of your choosing as well) that shows how many times each venue has been used. You can be creative about how to show this data. Extra points for some cool data science stuff.
