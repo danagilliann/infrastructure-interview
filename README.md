@@ -49,10 +49,11 @@ $.get( "https://api.tnyu.org/v3/events", function(data) {
     var events = data.data;
     console.log(events[0]);
 });
+```
 
 A single event will look something like:
 
-```
+```json
 {
     "links": {
         "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d"
