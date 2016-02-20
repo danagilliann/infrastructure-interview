@@ -36,8 +36,132 @@ And it will be running on port 3000. You should be able to navigate to it [here]
 
 We have included some things for you already! The entire web app is inside the `app` folder. The main HTML file is `index.html`, and it is what loads when you run `npm start`, and navigate to port 3000. We have imported jQuery for you already, and setup some initial lines to help you get data from our API.
 
-Our API runs on the URL: `https://api.tnyu.org`. It is currently running on version 3, and so the base for the API we will be using is `https://api.tnyu.org/v3/`. Our API uses the [JSON API](http://jsonapi.org/) spec. So if you're interested in learning more about it then you can use their library as a resource.
+Our API runs on the URL: `https://api.tnyu.org`. It is currently running on version 3, and so the base for the API we will be using is `https://api.tnyu.org/v3/`. Our API uses the [JSON API](http://jsonapi.org/) spec. So if you're interested in learning more about it then you can use their website as a resource.
 
 Now we have to talk about resources. A resource is a predescribed format, and each resource can be seen as a class or a model. Examples of resources would be events, people, venues, teams, etc. We have a large amount of resources in our API, and you will be dealing with the events and the venues resource. You might not be allowed to get data from every single resource as some require API permissions. To access a particular resource you can navigate to `https://api.tnyu.org/v3/events`. Here replacing events with any other resource name would return some output.
 
-If you navigate to the `/js/app.js` file you should see that we have provided you with a method that gets events from our API. Try and open this [URL](https://api.tnyu.org/v3/events) in your browser. If you don't have a JSON Viewer on your browser you can download one for [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) or [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/).
+If you navigate to the `/js/app.js` file in this tutorial you should see that we have provided you with a method that gets events from our API. Try and open this [URL](https://api.tnyu.org/v3/events) in your browser. If you don't have a JSON Viewer on your browser you can download one for [Chrome](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) or [Firefox](https://addons.mozilla.org/en-us/firefox/addon/jsonview/).
+
+Now open [this](https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d) up in your browser. This is a sample event. We'll help you understand the structure below. If you use this Javascript function it will give you a single instance of an event.
+
+```js
+$.get( "https://api.tnyu.org/v3/events", function(data) {
+    var events = data.data;
+    console.log(events[0]);
+});
+
+A single event will look something like:
+
+```
+{
+    "links": {
+        "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d"
+    },
+    "data": {
+        "id": "56c696e49a0f0429c502f14d",
+        "type": "events",
+        "attributes": {
+            "title": "Tech@NYU After Hours #4 (Spring '16)",
+            "level": "Beginner",
+            "shortTitle": "After Hours #4",
+            "description": "It's time to meet, mix and make.",
+            "details": "It's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!",
+            "status": "announced",
+            "endDateTime": "2016-03-03T01:00:00.000Z",
+            "startDateTime": "2016-03-02T23:00:00.000Z",
+            "modified": "2016-02-19T04:17:31.055Z",
+            "created": "2016-02-19T04:15:31.519Z",
+            "isInternal": false,
+            "alternateRsvpUrls": ["http://rsvp.techatnyu.org/"],
+            "aims": ["Learn New Skills"],
+            "categories": ["socializing"],
+            "bodyPlain": "It's time to meet, mix and make.\n\nIt's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!\n\nAll Tech@NYU events are covered by a strict anti-harassment policy: http://techatnyu.org/anti-harassment",
+            "body": "<p>It's time to meet, mix and make.</p>It's time to meet, mix and make new products, friends and collegiate bonds. Also come with projects and an open mind. Pizza will be served! Make sure to RSVP!<p>All Tech@NYU events are covered by a strict <a href=\"http://techatnyu.org/anti-harassment\">anti-harassment policy</a>.</p>"
+        },
+        "links": {
+            "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d"
+        },
+        "relationships": {
+            "venue": {
+                "data": {
+                    "type": "venues",
+                    "id": "5538889821b6808dd493bede"
+                },
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/venue",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/venue"
+                }
+            },
+            "teams": {
+                "data": [{
+                    "type": "teams",
+                    "id": "53f54dd98d1e62ff12539dc2"
+                }],
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/teams",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/teams"
+                }
+            },
+            "coorganizers": {
+                "data": [],
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/coorganizers",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/coorganizers"
+                }
+            },
+            "presenters": {
+                "data": [],
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/presenters",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/presenters"
+                }
+            },
+            "attendees": {
+                "data": [],
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/attendees",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/attendees"
+                }
+            },
+            "rsvps": {
+                "data": [],
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/rsvps",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/rsvps"
+                }
+            },
+            "teaches": {
+                "data": [],
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/teaches",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/teaches"
+                }
+            },
+            "addedBy": {
+                "data": {
+                    "type": "people",
+                    "id": "5632592fd28b5c1c59dba8b9"
+                },
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/addedBy",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/addedBy"
+                }
+            },
+            "survey": {
+                "data": null,
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/survey",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/survey"
+                }
+            },
+            "feedback": {
+                "data": [],
+                "links": {
+                    "related": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/feedback",
+                    "self": "https://api.tnyu.org/v3/events/56c696e49a0f0429c502f14d/relationships/feedback"
+                }
+            }
+        }
+    }
+}
+```
