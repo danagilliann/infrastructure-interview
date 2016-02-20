@@ -32,4 +32,4 @@ npm start
 
 And it will be running on port 3000. You should be able to navigate to it [here](http://localhost:3000/).
 
-We have included some things for you already! The entire angular app is inside the `app` folder.
+We have included some things for you already! The entire web app is inside the `app` folder. The main HTML file is `index.html`, and it is what loads when you run `npm start`, and navigate to port 3000. We have imported jQuery for you already, and setup some initial lines to help you get data from our API.
