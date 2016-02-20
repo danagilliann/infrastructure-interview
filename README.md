@@ -193,3 +193,5 @@ $.get("https://api.tnyu.org/v3/events?include=venue", function(data) {
 What we're doing here is that we have events data and venue data. Then we're using a hash map to map a venue ID key to a venue.
 
 Okay great! So you have all the items now. What we want you to do is to create a graph (of your choosing using a library of your choosing as well) that shows how many times each venue has been used. You can be creative about how to show this data. Extra points for some cool data science stuff.
+
+To submit either create a repository on Github with this code (extra points) and email it to us at ycp217 at nyu.edu OR zip up the app folder as `<lastname>_<firstname>.zip`, and email it to ycp217 at nyu.edu.
