@@ -13,7 +13,7 @@ If you're familiar with REST APIs and have worked with frontend before -- this p
 
 If you run into issues with the challenge please feel free to create an issue through the [Github interface](https://github.com/TechAtNYU/infrastructure-interview/issues) (preferred) OR if important email ycp217 at nyu.edu.
 
-The deadline is 26th February 2016 at 9:00 PM. The instructions on how to submit are at the bottom.
+**The deadline is 26th February 2016 at 9:00 PM.** The instructions on how to submit are at the bottom.
 
 ## Getting Started
 
@@ -196,10 +196,10 @@ $.get("https://api.tnyu.org/v3/events?include=venue", function(data) {
 
 What we're doing here is that we have events data and venue data. Then we're using a hash map to map a venue ID key to a venue.
 
-Okay great! So you have all the items now. What we want you to do is to create a graph (of your choosing using a library of your choosing as well) that shows how many times each venue has been used. You can be creative about how to show this data. Extra points for some cool data science stuff.
+Okay great! So you have all the items now. **What we want you to do is to create a graph (of your choosing using a library of your choosing as well) that shows how many times each venue has been used. You can be creative about how to show this data.** Extra points for some cool data science stuff.
 
 ## Submit
 
-To submit either create a **private** repository on Github with this code (extra points) and email it to us at ycp217 at nyu.edu OR zip up the app folder as `<lastname>_<firstname>.zip`, and email it to ycp217 at nyu.edu.
+To submit either create a **private** repository on Github with this code (extra points) and email it to us at **ycp217 at nyu.edu** OR zip up the app folder as `<lastname>_<firstname>.zip`, and email it to **ycp217 at nyu.edu**.
 
 If the repository is private on Github please add `ycp217` as a collaborator.
