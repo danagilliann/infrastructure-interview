@@ -200,6 +200,6 @@ Okay great! So you have all the items now. **What we want you to do is to create
 
 ## Submit
 
-To submit either create a **private** repository on Github with this code (extra points) and email it to us at **ycp217 at nyu.edu** OR zip up the app folder as `<lastname>_<firstname>.zip`, and email it to **ycp217 at nyu.edu**.  You can create a free private repository using the Github Student Developer Pack.
+To submit either create a **private** repository on Github with this code (extra points) and email it to us at **ycp217 at nyu.edu** OR zip up the app folder as `<lastname>_<firstname>.zip`, and email it to **ycp217 at nyu.edu**. 
 
-If the repository is private on Github please add `ycp217` as a collaborator.
+If the repository is private on Github please add `ycp217` as a collaborator. You can create a free private repository using the Github Student Developer Pack.
