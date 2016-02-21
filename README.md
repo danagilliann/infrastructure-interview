@@ -20,7 +20,7 @@ The deadline is 26th February 2016 at 9:00 PM. The instructions on how to submit
 Clone this repository (please don't fork it!):
 
 ```
-git clone git@github.com:TechAtNYU/infrastructure-interview.git
+git clone https://github.com/TechAtNYU/infrastructure-interview.git
 cd infrastructure-interview
 ```
 
